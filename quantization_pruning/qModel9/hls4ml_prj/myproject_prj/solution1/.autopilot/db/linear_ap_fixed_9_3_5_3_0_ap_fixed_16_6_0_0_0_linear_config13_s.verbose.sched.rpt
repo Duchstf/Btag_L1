@@ -1,0 +1,140 @@
+
+
+================================================================
+== Vitis HLS Report for 'linear_ap_fixed_9_3_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_s'
+================================================================
+* Date:           Mon Jun 19 05:17:02 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.429 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.42>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specpipeline_ln29 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 2 'specpipeline' 'specpipeline_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (1.42ns)   --->   "%p_read919 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read9"   --->   Operation 3 'read' 'p_read919' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 4 [1/1] (1.42ns)   --->   "%p_read818 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read8"   --->   Operation 4 'read' 'p_read818' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (1.42ns)   --->   "%p_read717 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read7"   --->   Operation 5 'read' 'p_read717' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 6 [1/1] (1.42ns)   --->   "%p_read616 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read6"   --->   Operation 6 'read' 'p_read616' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 7 [1/1] (1.42ns)   --->   "%p_read515 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read5"   --->   Operation 7 'read' 'p_read515' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (1.42ns)   --->   "%p_read414 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read4"   --->   Operation 8 'read' 'p_read414' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (1.42ns)   --->   "%p_read313 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read3"   --->   Operation 9 'read' 'p_read313' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 10 [1/1] (1.42ns)   --->   "%p_read212 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read2"   --->   Operation 10 'read' 'p_read212' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 11 [1/1] (1.42ns)   --->   "%p_read111 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read1"   --->   Operation 11 'read' 'p_read111' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (1.42ns)   --->   "%p_read_432 = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %p_read"   --->   Operation 12 'read' 'p_read_432' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read_432, i4 0"   --->   Operation 13 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%shl_ln838_1 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read111, i4 0"   --->   Operation 14 'bitconcatenate' 'shl_ln838_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%shl_ln838_2 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read212, i4 0"   --->   Operation 15 'bitconcatenate' 'shl_ln838_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%shl_ln838_3 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read313, i4 0"   --->   Operation 16 'bitconcatenate' 'shl_ln838_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%shl_ln838_4 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read414, i4 0"   --->   Operation 17 'bitconcatenate' 'shl_ln838_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%shl_ln838_5 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read515, i4 0"   --->   Operation 18 'bitconcatenate' 'shl_ln838_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%shl_ln838_6 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read616, i4 0"   --->   Operation 19 'bitconcatenate' 'shl_ln838_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%shl_ln838_7 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read717, i4 0"   --->   Operation 20 'bitconcatenate' 'shl_ln838_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%shl_ln838_8 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read818, i4 0"   --->   Operation 21 'bitconcatenate' 'shl_ln838_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%shl_ln838_9 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i9.i4, i9 %p_read919, i4 0"   --->   Operation 22 'bitconcatenate' 'shl_ln838_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mrv = insertvalue i130 <undef>, i13 %shl_ln" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 23 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i130 %mrv, i13 %shl_ln838_1" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 24 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i130 %mrv_1, i13 %shl_ln838_2" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 25 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue i130 %mrv_2, i13 %shl_ln838_3" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 26 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue i130 %mrv_3, i13 %shl_ln838_4" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 27 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue i130 %mrv_4, i13 %shl_ln838_5" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 28 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue i130 %mrv_5, i13 %shl_ln838_6" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 29 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue i130 %mrv_6, i13 %shl_ln838_7" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 30 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue i130 %mrv_7, i13 %shl_ln838_8" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 31 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue i130 %mrv_8, i13 %shl_ln838_9" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 32 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln34 = ret i130 %mrv_9" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 33 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.43ns
+The critical path consists of the following:
+	wire read operation ('p_read919') on port 'p_read9' [12]  (1.43 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

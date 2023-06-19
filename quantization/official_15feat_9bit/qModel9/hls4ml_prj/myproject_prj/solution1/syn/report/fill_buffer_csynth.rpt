@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'fill_buffer'
+================================================================
+* Date:           Mon Jun 19 04:06:36 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  0.618 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        -|        -|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      975|    -|
+|Register             |        -|     -|        -|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|        0|      975|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|        0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|        0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +----------------------------------------+----+-----------+-----+-----------+
+    |                  Name                  | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_phi_ln77_10_phi_fu_1045_p22  |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_11_phi_fu_1073_p22  |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_12_phi_fu_1101_p22  |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_13_phi_fu_1129_p22  |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_14_phi_fu_1157_p22  |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_1_phi_fu_793_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_2_phi_fu_821_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_3_phi_fu_849_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_4_phi_fu_877_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_5_phi_fu_905_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_6_phi_fu_933_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_7_phi_fu_961_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_8_phi_fu_989_p22    |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_9_phi_fu_1017_p22   |  65|         12|    9|        108|
+    |ap_phi_mux_phi_ln77_phi_fu_765_p22      |  65|         12|    9|        108|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |Total                                   | 975|        180|  135|       1620|
+    +----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+------+------------+--------------+--------------+
+|   RTL Ports  | Dir | Bits |  Protocol  | Source Object|    C Type    |
++--------------+-----+------+------------+--------------+--------------+
+|ap_ready      |  out|     1|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_0   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_1   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_2   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_3   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_4   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_5   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_6   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_7   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_8   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_9   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_10  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_11  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_12  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_13  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_14  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|p_read        |   in|  1350|     ap_none|        p_read|        scalar|
+|p_read1       |   in|     9|     ap_none|       p_read1|        scalar|
+|p_read2       |   in|     9|     ap_none|       p_read2|        scalar|
+|p_read3       |   in|     9|     ap_none|       p_read3|        scalar|
+|p_read4       |   in|     9|     ap_none|       p_read4|        scalar|
+|p_read5       |   in|     9|     ap_none|       p_read5|        scalar|
+|p_read6       |   in|     9|     ap_none|       p_read6|        scalar|
+|p_read7       |   in|     9|     ap_none|       p_read7|        scalar|
+|p_read8       |   in|     9|     ap_none|       p_read8|        scalar|
+|p_read9       |   in|     9|     ap_none|       p_read9|        scalar|
+|p_read10      |   in|     9|     ap_none|      p_read10|        scalar|
+|p_read11      |   in|     9|     ap_none|      p_read11|        scalar|
+|p_read12      |   in|     9|     ap_none|      p_read12|        scalar|
+|p_read13      |   in|     9|     ap_none|      p_read13|        scalar|
+|p_read14      |   in|     9|     ap_none|      p_read14|        scalar|
+|p_read15      |   in|     9|     ap_none|      p_read15|        scalar|
+|partition     |   in|     4|     ap_none|     partition|        scalar|
++--------------+-----+------+------------+--------------+--------------+
+

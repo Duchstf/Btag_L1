@@ -1,0 +1,19 @@
+name: btag_L1
+dependencies:
+  - python=3.8
+  - tensorflow
+  - keras
+  - scikit-learn
+  - matplotlib
+  - pip
+  - ipykernel
+  - pip:
+    - h5py
+    - scipy==1.5.4
+    - numpy
+    - mplhep
+    - jupyter
+    - qkeras
+#   Need Qkeras and hls4ml as well, usually I just do pip install
+#   since sometimes I need customized version.
+#    - git+https://github.com/Keb-L/hls4ml.git@cnn_merge

@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "myproject",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/data\/dhoang\/Btag_L1\/quantization_official\/official_15feat_9bit\/qModel9\/hls4ml_prj\/build_prj.tcl",
+          "sourceLine": "183",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject"
+              }]
+          }
+        }]
+    }]}

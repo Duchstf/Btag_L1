@@ -1,0 +1,118 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    Conv1D_1:
+      Precision:
+        bias: fixed<9,3>
+        result: fixed<16,6>
+        weight: fixed<9,3>
+      ReuseFactor: 5
+      Strategy: Latency
+      Trace: false
+    Conv1D_1_input:
+      Precision: ap_fixed<9,3>
+      ReuseFactor: 5
+      Strategy: Latency
+      Trace: false
+    Conv1D_1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 5
+      Strategy: Latency
+      Trace: false
+    Conv1D_2:
+      Precision:
+        bias: fixed<9,3>
+        result: fixed<16,6>
+        weight: fixed<9,3>
+      ReuseFactor: 5
+      Strategy: Latency
+      Trace: false
+    Conv1D_2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 5
+      Strategy: Latency
+      Trace: false
+    Dense_1:
+      Precision:
+        bias: fixed<9,3>
+        result: fixed<16,6>
+        weight: fixed<9,3>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    Dense_1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    Dense_2:
+      Precision: ap_fixed<9,3>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    Dense_2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    flatten:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    output:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    output_linear:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    relu_1:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    relu_2:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    relu_3:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    relu_4:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+    sigmoid:
+      Precision: ap_fixed<9,4>
+      ReuseFactor: 5
+      Strategy: Resource
+      Trace: false
+      exp_table_t: ap_fixed<18,4>
+      inv_table_t: ap_fixed<18,4>
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<12,4>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'qModel9/hls4ml_prj/keras_model.h5'
+OutputDir: qModel9/hls4ml_prj
+OutputPredictions: null
+Part: xcvu9p-flga2104-2L-e
+ProjectName: myproject
+Stamp: D5318539

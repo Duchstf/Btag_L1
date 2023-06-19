@@ -1,0 +1,210 @@
+
+
+================================================================
+== Vitis HLS Report for 'linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_s'
+================================================================
+* Date:           Mon Jun 19 05:16:49 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.429 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.42>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specpipeline_ln29 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 2 'specpipeline' 'specpipeline_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (1.42ns)   --->   "%p_read_433 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read49" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 3 'read' 'p_read_433' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 4 [1/1] (1.42ns)   --->   "%p_read_434 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read48" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 4 'read' 'p_read_434' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (1.42ns)   --->   "%p_read_435 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read47" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 5 'read' 'p_read_435' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 6 [1/1] (1.42ns)   --->   "%p_read_436 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read46" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 6 'read' 'p_read_436' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 7 [1/1] (1.42ns)   --->   "%p_read_437 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read45" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 7 'read' 'p_read_437' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (1.42ns)   --->   "%p_read_438 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read44" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 8 'read' 'p_read_438' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (1.42ns)   --->   "%p_read4393 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read43" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 9 'read' 'p_read4393' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 10 [1/1] (1.42ns)   --->   "%p_read4292 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read42" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 10 'read' 'p_read4292' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 11 [1/1] (1.42ns)   --->   "%p_read4191 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read41" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 11 'read' 'p_read4191' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (1.42ns)   --->   "%p_read4090 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read40" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 12 'read' 'p_read4090' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (1.42ns)   --->   "%p_read_439 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read39" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 13 'read' 'p_read_439' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 14 [1/1] (1.42ns)   --->   "%p_read_440 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read38" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 14 'read' 'p_read_440' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 15 [1/1] (1.42ns)   --->   "%p_read_441 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read37" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 15 'read' 'p_read_441' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 16 [1/1] (1.42ns)   --->   "%p_read_442 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read36" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 16 'read' 'p_read_442' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 17 [1/1] (1.42ns)   --->   "%p_read_443 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read35" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 17 'read' 'p_read_443' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 18 [1/1] (1.42ns)   --->   "%p_read_444 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read34" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 18 'read' 'p_read_444' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 19 [1/1] (1.42ns)   --->   "%p_read3383 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read33" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 19 'read' 'p_read3383' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 20 [1/1] (1.42ns)   --->   "%p_read3282 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read32" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 20 'read' 'p_read3282' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 21 [1/1] (1.42ns)   --->   "%p_read3181 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read31" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 21 'read' 'p_read3181' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 22 [1/1] (1.42ns)   --->   "%p_read3080 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read30" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 22 'read' 'p_read3080' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 23 [1/1] (1.42ns)   --->   "%p_read_445 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read29" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 23 'read' 'p_read_445' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 24 [1/1] (1.42ns)   --->   "%p_read_446 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read28" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 24 'read' 'p_read_446' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 25 [1/1] (1.42ns)   --->   "%p_read_447 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read27" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 25 'read' 'p_read_447' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 26 [1/1] (1.42ns)   --->   "%p_read_448 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read26" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 26 'read' 'p_read_448' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 27 [1/1] (1.42ns)   --->   "%p_read_449 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read25" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 27 'read' 'p_read_449' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 28 [1/1] (1.42ns)   --->   "%p_read_450 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read24" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 28 'read' 'p_read_450' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 29 [1/1] (1.42ns)   --->   "%p_read2373 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read23" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 29 'read' 'p_read2373' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 30 [1/1] (1.42ns)   --->   "%p_read2272 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read22" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 30 'read' 'p_read2272' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 31 [1/1] (1.42ns)   --->   "%p_read2171 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read21" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 31 'read' 'p_read2171' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 32 [1/1] (1.42ns)   --->   "%p_read2070 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read20" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 32 'read' 'p_read2070' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 33 [1/1] (1.42ns)   --->   "%p_read_451 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read19" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 33 'read' 'p_read_451' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 34 [1/1] (1.42ns)   --->   "%p_read_452 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read18" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 34 'read' 'p_read_452' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 35 [1/1] (1.42ns)   --->   "%p_read_453 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read17" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 35 'read' 'p_read_453' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 36 [1/1] (1.42ns)   --->   "%p_read_454 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read16" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 36 'read' 'p_read_454' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 37 [1/1] (1.42ns)   --->   "%p_read_455 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read15" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 37 'read' 'p_read_455' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 38 [1/1] (1.42ns)   --->   "%p_read_456 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read14" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 38 'read' 'p_read_456' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 39 [1/1] (1.42ns)   --->   "%p_read1363 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read13" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 39 'read' 'p_read1363' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 40 [1/1] (1.42ns)   --->   "%p_read1262 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read12" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 40 'read' 'p_read1262' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 41 [1/1] (1.42ns)   --->   "%p_read1161 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read11" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 41 'read' 'p_read1161' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 42 [1/1] (1.42ns)   --->   "%p_read1060 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read10" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 42 'read' 'p_read1060' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 43 [1/1] (1.42ns)   --->   "%p_read959 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read9" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 43 'read' 'p_read959' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 44 [1/1] (1.42ns)   --->   "%p_read858 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read8" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 44 'read' 'p_read858' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 45 [1/1] (1.42ns)   --->   "%p_read757 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read7" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 45 'read' 'p_read757' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 46 [1/1] (1.42ns)   --->   "%p_read656 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read6" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 46 'read' 'p_read656' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 47 [1/1] (1.42ns)   --->   "%p_read555 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read5" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 47 'read' 'p_read555' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 48 [1/1] (1.42ns)   --->   "%p_read454 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read4" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 48 'read' 'p_read454' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 49 [1/1] (1.42ns)   --->   "%p_read353 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read3" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 49 'read' 'p_read353' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 50 [1/1] (1.42ns)   --->   "%p_read252 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read2" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 50 'read' 'p_read252' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 51 [1/1] (1.42ns)   --->   "%p_read151 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read1" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 51 'read' 'p_read151' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 52 [1/1] (1.42ns)   --->   "%p_read_457 = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %p_read" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 52 'read' 'p_read_457' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%mrv = insertvalue i700 <undef>, i14 %p_read_457" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 53 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i700 %mrv, i14 %p_read151" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 54 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i700 %mrv_1, i14 %p_read252" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 55 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue i700 %mrv_2, i14 %p_read353" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 56 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue i700 %mrv_3, i14 %p_read454" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 57 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue i700 %mrv_4, i14 %p_read555" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 58 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue i700 %mrv_5, i14 %p_read656" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 59 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue i700 %mrv_6, i14 %p_read757" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 60 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue i700 %mrv_7, i14 %p_read858" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 61 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue i700 %mrv_8, i14 %p_read959" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 62 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue i700 %mrv_9, i14 %p_read1060" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 63 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue i700 %mrv_10, i14 %p_read1161" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 64 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%mrv_12 = insertvalue i700 %mrv_11, i14 %p_read1262" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 65 'insertvalue' 'mrv_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%mrv_13 = insertvalue i700 %mrv_12, i14 %p_read1363" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 66 'insertvalue' 'mrv_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%mrv_14 = insertvalue i700 %mrv_13, i14 %p_read_456" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 67 'insertvalue' 'mrv_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%mrv_15 = insertvalue i700 %mrv_14, i14 %p_read_455" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 68 'insertvalue' 'mrv_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%mrv_16 = insertvalue i700 %mrv_15, i14 %p_read_454" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 69 'insertvalue' 'mrv_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%mrv_17 = insertvalue i700 %mrv_16, i14 %p_read_453" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 70 'insertvalue' 'mrv_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%mrv_18 = insertvalue i700 %mrv_17, i14 %p_read_452" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 71 'insertvalue' 'mrv_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%mrv_19 = insertvalue i700 %mrv_18, i14 %p_read_451" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 72 'insertvalue' 'mrv_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%mrv_20 = insertvalue i700 %mrv_19, i14 %p_read2070" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 73 'insertvalue' 'mrv_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%mrv_21 = insertvalue i700 %mrv_20, i14 %p_read2171" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 74 'insertvalue' 'mrv_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%mrv_22 = insertvalue i700 %mrv_21, i14 %p_read2272" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 75 'insertvalue' 'mrv_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%mrv_23 = insertvalue i700 %mrv_22, i14 %p_read2373" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 76 'insertvalue' 'mrv_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%mrv_24 = insertvalue i700 %mrv_23, i14 %p_read_450" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 77 'insertvalue' 'mrv_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%mrv_25 = insertvalue i700 %mrv_24, i14 %p_read_449" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 78 'insertvalue' 'mrv_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%mrv_26 = insertvalue i700 %mrv_25, i14 %p_read_448" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 79 'insertvalue' 'mrv_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%mrv_27 = insertvalue i700 %mrv_26, i14 %p_read_447" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 80 'insertvalue' 'mrv_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%mrv_28 = insertvalue i700 %mrv_27, i14 %p_read_446" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 81 'insertvalue' 'mrv_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%mrv_29 = insertvalue i700 %mrv_28, i14 %p_read_445" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 82 'insertvalue' 'mrv_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%mrv_30 = insertvalue i700 %mrv_29, i14 %p_read3080" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 83 'insertvalue' 'mrv_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%mrv_31 = insertvalue i700 %mrv_30, i14 %p_read3181" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 84 'insertvalue' 'mrv_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%mrv_32 = insertvalue i700 %mrv_31, i14 %p_read3282" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 85 'insertvalue' 'mrv_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%mrv_33 = insertvalue i700 %mrv_32, i14 %p_read3383" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 86 'insertvalue' 'mrv_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%mrv_34 = insertvalue i700 %mrv_33, i14 %p_read_444" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 87 'insertvalue' 'mrv_34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%mrv_35 = insertvalue i700 %mrv_34, i14 %p_read_443" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 88 'insertvalue' 'mrv_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%mrv_36 = insertvalue i700 %mrv_35, i14 %p_read_442" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 89 'insertvalue' 'mrv_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%mrv_37 = insertvalue i700 %mrv_36, i14 %p_read_441" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 90 'insertvalue' 'mrv_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%mrv_38 = insertvalue i700 %mrv_37, i14 %p_read_440" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 91 'insertvalue' 'mrv_38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%mrv_39 = insertvalue i700 %mrv_38, i14 %p_read_439" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 92 'insertvalue' 'mrv_39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%mrv_40 = insertvalue i700 %mrv_39, i14 %p_read4090" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 93 'insertvalue' 'mrv_40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%mrv_41 = insertvalue i700 %mrv_40, i14 %p_read4191" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 94 'insertvalue' 'mrv_41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%mrv_42 = insertvalue i700 %mrv_41, i14 %p_read4292" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 95 'insertvalue' 'mrv_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%mrv_43 = insertvalue i700 %mrv_42, i14 %p_read4393" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 96 'insertvalue' 'mrv_43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%mrv_44 = insertvalue i700 %mrv_43, i14 %p_read_438" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 97 'insertvalue' 'mrv_44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%mrv_45 = insertvalue i700 %mrv_44, i14 %p_read_437" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 98 'insertvalue' 'mrv_45' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%mrv_46 = insertvalue i700 %mrv_45, i14 %p_read_436" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 99 'insertvalue' 'mrv_46' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%mrv_47 = insertvalue i700 %mrv_46, i14 %p_read_435" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 100 'insertvalue' 'mrv_47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%mrv_48 = insertvalue i700 %mrv_47, i14 %p_read_434" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 101 'insertvalue' 'mrv_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%mrv_49 = insertvalue i700 %mrv_48, i14 %p_read_433" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 102 'insertvalue' 'mrv_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%ret_ln34 = ret i700 %mrv_49" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 103 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.43ns
+The critical path consists of the following:
+	wire read operation ('p_read_433', firmware/nnet_utils/nnet_activation.h:34) on port 'p_read49' (firmware/nnet_utils/nnet_activation.h:34) [52]  (1.43 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
