@@ -2,5 +2,4 @@ data/
 .ipynb_checkpoints/
 __pycache__/
 *.tar.gz
-hls4ml/
 *.vscode/
