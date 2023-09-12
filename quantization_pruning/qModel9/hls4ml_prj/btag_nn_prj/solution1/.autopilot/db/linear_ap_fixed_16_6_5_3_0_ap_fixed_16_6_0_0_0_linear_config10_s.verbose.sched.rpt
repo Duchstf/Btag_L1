@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_s'
+================================================================
+* Date:           Thu Aug 17 12:47:18 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        btag_nn_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.80 ns|  1.225 ns|     0.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.22>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specpipeline_ln29 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 2 'specpipeline' 'specpipeline_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (1.22ns)   --->   "%p_read_576 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read19"   --->   Operation 3 'read' 'p_read_576' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 4 [1/1] (1.22ns)   --->   "%p_read_577 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read18"   --->   Operation 4 'read' 'p_read_577' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (1.22ns)   --->   "%p_read_578 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read17"   --->   Operation 5 'read' 'p_read_578' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 6 [1/1] (1.22ns)   --->   "%p_read_579 = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %p_read16"   --->   Operation 6 'read' 'p_read_579' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 7 [1/1] (1.22ns)   --->   "%p_read1551 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read15"   --->   Operation 7 'read' 'p_read1551' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (1.22ns)   --->   "%p_read1450 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read14"   --->   Operation 8 'read' 'p_read1450' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (1.22ns)   --->   "%p_read1349 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read13"   --->   Operation 9 'read' 'p_read1349' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 10 [1/1] (1.22ns)   --->   "%p_read1148 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read11"   --->   Operation 10 'read' 'p_read1148' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 11 [1/1] (1.22ns)   --->   "%p_read1047 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read10"   --->   Operation 11 'read' 'p_read1047' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (1.22ns)   --->   "%p_read946 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read9"   --->   Operation 12 'read' 'p_read946' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (1.22ns)   --->   "%p_read845 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read8"   --->   Operation 13 'read' 'p_read845' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 14 [1/1] (1.22ns)   --->   "%p_read744 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read7"   --->   Operation 14 'read' 'p_read744' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 15 [1/1] (1.22ns)   --->   "%p_read643 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read6"   --->   Operation 15 'read' 'p_read643' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 16 [1/1] (1.22ns)   --->   "%p_read542 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read5"   --->   Operation 16 'read' 'p_read542' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 17 [1/1] (1.22ns)   --->   "%p_read441 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read4"   --->   Operation 17 'read' 'p_read441' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 18 [1/1] (1.22ns)   --->   "%p_read340 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read3"   --->   Operation 18 'read' 'p_read340' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 19 [1/1] (1.22ns)   --->   "%p_read239 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read2"   --->   Operation 19 'read' 'p_read239' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 20 [1/1] (1.22ns)   --->   "%p_read138 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read1"   --->   Operation 20 'read' 'p_read138' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 21 [1/1] (1.22ns)   --->   "%p_read37 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read"   --->   Operation 21 'read' 'p_read37' <Predicate = true> <Delay = 1.22> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%newret = insertvalue i303 <undef>, i16 %p_read37"   --->   Operation 22 'insertvalue' 'newret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%newret2 = insertvalue i303 %newret, i16 %p_read138"   --->   Operation 23 'insertvalue' 'newret2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%newret4 = insertvalue i303 %newret2, i16 %p_read239"   --->   Operation 24 'insertvalue' 'newret4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%newret6 = insertvalue i303 %newret4, i16 %p_read340"   --->   Operation 25 'insertvalue' 'newret6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%newret8 = insertvalue i303 %newret6, i16 %p_read441"   --->   Operation 26 'insertvalue' 'newret8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%newret10 = insertvalue i303 %newret8, i16 %p_read542"   --->   Operation 27 'insertvalue' 'newret10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%newret12 = insertvalue i303 %newret10, i16 %p_read643"   --->   Operation 28 'insertvalue' 'newret12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%newret14 = insertvalue i303 %newret12, i16 %p_read744"   --->   Operation 29 'insertvalue' 'newret14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%newret16 = insertvalue i303 %newret14, i16 %p_read845"   --->   Operation 30 'insertvalue' 'newret16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%newret18 = insertvalue i303 %newret16, i16 %p_read946"   --->   Operation 31 'insertvalue' 'newret18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%newret20 = insertvalue i303 %newret18, i16 %p_read1047"   --->   Operation 32 'insertvalue' 'newret20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%newret22 = insertvalue i303 %newret20, i16 %p_read1148"   --->   Operation 33 'insertvalue' 'newret22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%newret24 = insertvalue i303 %newret22, i16 %p_read1349"   --->   Operation 34 'insertvalue' 'newret24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%newret26 = insertvalue i303 %newret24, i16 %p_read1450"   --->   Operation 35 'insertvalue' 'newret26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%newret28 = insertvalue i303 %newret26, i16 %p_read1551"   --->   Operation 36 'insertvalue' 'newret28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%newret30 = insertvalue i303 %newret28, i15 %p_read_579"   --->   Operation 37 'insertvalue' 'newret30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%newret32 = insertvalue i303 %newret30, i16 %p_read_578"   --->   Operation 38 'insertvalue' 'newret32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%newret34 = insertvalue i303 %newret32, i16 %p_read_577"   --->   Operation 39 'insertvalue' 'newret34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%newret36 = insertvalue i303 %newret34, i16 %p_read_576"   --->   Operation 40 'insertvalue' 'newret36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%ret_ln0 = ret i303 %newret36"   --->   Operation 41 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2.8ns, clock uncertainty: 0.35ns.
+
+ <State 1>: 1.23ns
+The critical path consists of the following:
+	wire read operation ('p_read_576') on port 'p_read19' [21]  (1.23 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

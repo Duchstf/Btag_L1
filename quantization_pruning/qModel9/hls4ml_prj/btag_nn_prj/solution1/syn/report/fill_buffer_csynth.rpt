@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vitis HLS Report for 'fill_buffer'
+================================================================
+* Date:           Thu Aug 17 12:47:38 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        btag_nn_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.80 ns|      0 ns|     0.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        -|        -|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|        -|    -|
+|Register             |        -|     -|        -|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|        0|        0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|        0|        0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|        0|        0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+------+------------+--------------+--------------+
+|   RTL Ports   | Dir | Bits |  Protocol  | Source Object|    C Type    |
++---------------+-----+------+------------+--------------+--------------+
+|ap_ready       |  out|     1|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_0    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_1    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_2    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_3    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_4    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_5    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_6    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_7    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_8    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_9    |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_10   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_11   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_12   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_13   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_14   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_15   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_16   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_17   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_18   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_19   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_20   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_21   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_22   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_23   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_24   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_25   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_26   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_27   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_28   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_29   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_30   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_31   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_32   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_33   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_34   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_35   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_36   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_37   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_38   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_39   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_40   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_41   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_42   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_43   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_44   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_45   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_46   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_47   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_48   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_49   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_50   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_51   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_52   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_53   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_54   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_55   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_56   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_57   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_58   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_59   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_60   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_61   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_62   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_63   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_64   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_65   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_66   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_67   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_68   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_69   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_70   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_71   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_72   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_73   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_74   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_75   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_76   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_77   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_78   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_79   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_80   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_81   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_82   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_83   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_84   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_85   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_86   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_87   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_88   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_89   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_90   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_91   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_92   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_93   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_94   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_95   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_96   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_97   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_98   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_99   |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_100  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_101  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_102  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_103  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_104  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_105  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_106  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_107  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_108  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_109  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_110  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_111  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_112  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_113  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_114  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_115  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_116  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_117  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_118  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_119  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_120  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_121  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_122  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_123  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_124  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_125  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_126  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_127  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_128  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_129  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_130  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_131  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_132  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_133  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_134  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_135  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_136  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_137  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_138  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_139  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_140  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_141  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_142  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_143  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_144  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_145  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_146  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_147  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_148  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|ap_return_149  |  out|     9|  ap_ctrl_hs|   fill_buffer|  return value|
+|p_read         |   in|  1350|     ap_none|        p_read|        scalar|
++---------------+-----+------+------------+--------------+--------------+
+

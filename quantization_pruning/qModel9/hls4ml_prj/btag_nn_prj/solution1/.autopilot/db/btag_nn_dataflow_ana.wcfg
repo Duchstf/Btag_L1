@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="btag_nn.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_btag_nn_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn//AESL_inst_btag_nn_activity">
+         <obj_property name="label">AESL_inst_btag_nn_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_btag_nn_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_btag_nn_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn//AESL_inst_btag_nn_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn//AESL_inst_btag_nn_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn//AESL_inst_btag_nn_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity">
+            <obj_property name="label">conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity">
+            <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity">
+            <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity">
+            <obj_property name="label">pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity">
+            <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity">
+            <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity">
+            <obj_property name="label">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity">
+            <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity">
+            <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity">
+            <obj_property name="label">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity">
+            <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity">
+            <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity">
+            <obj_property name="label">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity">
+            <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity">
+            <obj_property name="label">sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn//AESL_inst_btag_nn_activity">
+      <obj_property name="ElementShortName">AESL_inst_btag_nn_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_btag_nn_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_btag_nn_group">
+      <obj_property name="label">AESL_inst_btag_nn</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity">
+         <obj_property name="ElementShortName">conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity">
+         <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity">
+         <obj_property name="ElementShortName">pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity">
+         <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity">
+         <obj_property name="ElementShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity">
+         <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity">
+         <obj_property name="ElementShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity">
+         <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity">
+         <obj_property name="ElementShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity">
+         <obj_property name="ElementShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity">
+         <obj_property name="ElementShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity">
+         <obj_property name="ElementShortName">sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_btag_nn_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_group">
+         <obj_property name="label">conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="conv_1d_latency_cl_ap_fixed_9_3_5_3_0_ap_fixed_16_6_5_3_0_config2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_group">
+         <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config4_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_group">
+         <obj_property name="label">pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="pointwise_conv_1d_latency_cl_ap_ufixed_ap_fixed_16_6_5_3_0_config18_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_group">
+         <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config6_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config7_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_group">
+         <obj_property name="label">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config9_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_group">
+         <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config10_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config11_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_group">
+         <obj_property name="label">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config12_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_group">
+         <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config13_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_group">
+         <obj_property name="label">relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="relu_ap_fixed_16_6_0_0_0_ap_ufixed_9_0_0_0_0_relu_config14_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_group">
+         <obj_property name="label">dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_latency_ap_ufixed_9_0_0_0_0_ap_fixed_16_6_5_3_0_config15_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_group">
+         <obj_property name="label">linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="linear_ap_fixed_16_6_5_3_0_ap_fixed_16_6_0_0_0_linear_config16_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_group">
+         <obj_property name="label">sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="sigmoid_table_group">
+               <obj_property name="label">sigmoid_table(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_table_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_table_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/sigmoid_table_ce0">
+                  <obj_property name="ElementShortName">sigmoid_table_ce0</obj_property>
+                  <obj_property name="ObjectShortName">sigmoid_table_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_btag_nn_top/AESL_inst_btag_nn/sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sigmoid_ap_fixed_16_6_0_0_0_ap_fixed_16_6_0_0_0_sigmoid_config17_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
