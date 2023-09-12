@@ -35,50 +35,47 @@ model = load_qmodel(model_path)
 
 #Hls4ml conversion
 import os
+
+#Remove the old directory
+os.system('rm -rf qModel9')
+
 os.environ['PATH'] += os.pathsep + '/data/Xilinx/Vivado/2022.2/bin'
 hls4ml.model.optimizer.get_optimizer('output_rounding_saturation_mode').configure(layers=['Activation'], rounding_mode='AP_RND', saturation_mode='AP_SAT')
 
 config = hls4ml.utils.config_from_keras_model(model, granularity='name')
+
+print(config)
+
+#Quantization settings
+# config['Model']['Precision'] = 'ap_fixed<12,4>'
 config['LayerName']['sigmoid']['exp_table_t'] = 'ap_fixed<18,4>'
 config['LayerName']['sigmoid']['inv_table_t'] = 'ap_fixed<18,4>'
 config['LayerName']['Conv1D_1_input']['Precision'] = 'ap_fixed<9,3>'
-# config['LayerName']['Conv1D_1']['ParallelizationFactor'] = 5
-# config['LayerName']['Conv1D_2']['ParallelizationFactor'] = 5
-config['Model']['Precision'] = 'ap_fixed<12,4>'
-config['IOType']     = 'io_parallel'
 
-print(config)
+#II settings
+config['IOType']     = 'io_parallel'
+config['LayerName']['Conv1D_1']['ParallelizationFactor'] = 10
+config['LayerName']['Conv1D_2']['ParallelizationFactor'] = 10
+# config["LayerName"]['Conv1D_2']["ConvImplementation"] = "Pointwise"
 
 for Layer in config['LayerName'].keys():
     if "Conv1D" in Layer:
         config['LayerName'][Layer]['Strategy'] = 'Latency'
-        config['LayerName'][Layer]['ReuseFactor'] = 5
-
-        # if Layer ==  "Conv1D_1":
-        #     config['LayerName'][Layer]['Precision'] = 'ap_fixed<9,3>'
-
-        # if Layer ==  "Conv1D_2":
-        #     config['LayerName'][Layer]['Precision'] = 'ap_fixed<9,3>'
-
+        config['LayerName'][Layer]['ReuseFactor'] = 1
+        
     elif "Dense" in Layer:
-        # if Layer ==  "Dense_1":
-        #     config['LayerName'][Layer]['Precision'] = 'ap_fixed<9,3>'
-        if Layer ==  "Dense_2":
-            config['LayerName'][Layer]['Precision'] = 'ap_fixed<9,3>'
-        if Layer ==  "Dense_3":
-            config['LayerName'][Layer]['Precision'] = 'ap_fixed<9,3>'
 
-        config['LayerName'][Layer]['Strategy'] = 'Resource'
-        config['LayerName'][Layer]['ReuseFactor'] = 5
+        config['LayerName'][Layer]['Strategy'] = 'Latency'
+        config['LayerName'][Layer]['ReuseFactor'] = 1
 
     else:
-        config['LayerName'][Layer]['Precision'] = 'ap_fixed<9,4>'
-        config['LayerName'][Layer]['Strategy'] = 'Resource'
-        config['LayerName'][Layer]['ReuseFactor'] = 5
+        config['LayerName'][Layer]['Strategy'] = 'Latency'
+        config['LayerName'][Layer]['ReuseFactor'] = 1
 
-#hls4ml.model.flow.get_flow('vivado:optimize')._remove_optimizer('vivado:optimize_pointwise_conv')
 hls_model = hls4ml.converters.convert_from_keras_model(model,
                                                        backend='Vitis',
+                                                       project_name='btag_nn', #I'm not very creative
+                                                       clock_period=2.8, #1/360MHz = 2.8ns
                                                        hls_config=config,
                                                        output_dir='qModel9/hls4ml_prj',
                                                        part='xcvu9p-flga2104-2L-e')
@@ -125,4 +122,4 @@ plt.ylim([10**(-2),1])
 plt.legend(loc='lower right')
 plt.savefig('Models_ROC.png')
 
-# hls_model.build(csim=False, reset = True)
+hls_model.build(csim=False, reset = True)
