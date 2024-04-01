@@ -10,6 +10,12 @@ All the relevant data files are stored in this Google Drive link
 https://drive.google.com/drive/folders/1u6FVv8AcBkud_yEYULhEtGS6RDmQZbpV
 ```
 
+## Counting number of b-tagged jets in ttbar sample
+
+* Follow the setup here: https://github.com/p2l1pfp/FastPUPPI/tree/14_0_X/NtupleProducer
+* Have to modify the config here: https://github.com/p2l1pfp/FastPUPPI/blob/14_0_X/NtupleProducer/python/runPerformanceNTuple.py
+
+
 ## Conda environment
 
 Create conda environment:
